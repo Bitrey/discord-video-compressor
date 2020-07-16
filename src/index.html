@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
+    <!-- <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'"> -->
+    <!-- <meta http-equiv="X-Content-Security-Policy" content="default-src 'self'; script-src 'self'"> -->
+    <title>Discord Video Compressor</title>
+    <link rel="stylesheet" href="./index.css">
+</head>
+
+<body>
+    <div>
+        <h1>Choose your video</h1>
+        <input type="file" id="videoInput" accept="video/*" multiple>
+        <button onclick="uploadVideo()">Compress!</button>
+        <h5 style="margin-top: 20px">Logs</h5>
+        <div id="status">Ready</div>
+    </div>
+
+    <script src="./client.js"></script>
+</body>
+
+</html>
